@@ -51,7 +51,7 @@ ALPHABET=0
 
 GUESSED=[]
 
-LOGIN='test01\n'
+LOGIN='test00\n'
 PASSW='qq\n'
 
 s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
@@ -66,7 +66,7 @@ def get_response():
 def write_to_log(info):
     log_msg = f'{current_time()} {info}'
     print(log_msg)
-    os.system("echo '" + log_msg + "' >> log.txt")
+    # os.system("echo '" + log_msg + "' >> log.txt")
 
 def search_for_words(state):
     try:
@@ -140,31 +140,30 @@ def game(word_numbers):
                 possible_words = search_for_words(p.state)
 
             if len(possible_words) > 0 and len(possible_words) < 9:
-                for _ in range(10 - i):
-                    # TODO: Get this shit into one function. Same thing under.
-                    s.send(str("=\n" + possible_words[0] + "\n").encode())
-                    write_to_log(f'[{i}] Guessing: {possible_words[0]}')
-                    possible_words.remove(possible_words[0])
+                # TODO: Get this shit into one function. Same thing under.
+                s.send(str("=\n" + possible_words[0] + "\n").encode())
+                write_to_log(f'[{i}] Guessing: {possible_words[0]}')
+                possible_words.remove(possible_words[0])
 
-                    sleep(0.1)
-                    guessed = get_response()
-                    write_to_log(f'Server: {guessed}')
+                sleep(0.1)
+                guessed = get_response()
+                write_to_log(f'Server: {guessed}')
 
-                    if guessed[0] == "=":
-                        write_to_log('Guessed!')
-                        close_write(start_time, time())
-                        break
-                    
-                    if "?" in guessed:
-                        write_to_log('Got ? closing connection.')
-                        close_write(start_time, time())
-                        break
+                if guessed[0] == "=":
+                    write_to_log('Guessed!')
+                    close_write(start_time, time())
+                    break
+                
+                if "?" in guessed:
+                    write_to_log('Got ? closing connection.')
+                    close_write(start_time, time())
+                    break
 
-                    i += 1
-                    if i >= 9:
-                        write_to_log('Out of guesses')
-                        close_write(start_time, time())
-                        break
+                i += 1
+                if i >= 9:
+                    write_to_log('Out of guesses')
+                    close_write(start_time, time())
+                    break
             
             if i == 9:
                 # TODO: Get this shit to one func.

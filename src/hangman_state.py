@@ -3,12 +3,6 @@ class HangmanState(object):
         self.word = [int(i) for i in word_to_guess]
         self.guessed = ['' for _ in range(len(word_to_guess))]
         self.count_guesses = 0
-        # if len(word_to_guess) == 2:# Words of length 2. Total count 133
-        #     self.freq = ['e', 'o', 'a', 'u', 'i', 't', 'm', 'h', 'd', 's', 'y', 'n', 'l', 'j', 'b', 'f', 'w', 'r', 'z', 'k', 'p', 'g', 'ż', 'ą', 'c', 'ę', 'ó', 'ł', 'ń', 'ś']
-        # if len(word_to_guess) == 3:# Words of length 3. Total count 1603
-        #     self.freq = ['a', 'o', 'i', 'u', 'e', 'r', 't', 'l', 'k', 'm', 'n', 's', 'd', 'p', 'b', 'y', 'g', 'w', 'z', 'ł', 'c', 'j', 'ż', 'f', 'ą', 'ę', 'h', 'ó', 'ć', 'ś', 'ń', 'ź', 'x', 'v']
-        # if len(word_to_guess) == 4:# Words of length 4. Total count 8098
-        #     self.freq = ['a', 'o', 'u', 'i', 'r', 'e', 'k', 'l', 'y', 's', 't', 'm', 'n', 'p', 'd', 'z', 'b', 'w', 'g', 'ę', 'ą', 'c', 'ł', 'j', 'f', 'ż', 'h', 'ć', 'ó', 'ś', 'ń', 'ź', 'x', 'v']
         if len(word_to_guess) == 5:# Words of length 5. Total count 28008
             self.freq = ['a', 'o', 'i', 'e', 'k', 'u', 'r', 'm', 'n', 's', 'l', 'y', 't', 'p', 'w', 'z', 'c', 'd', 'b', 'ą', 'ł', 'ę', 'g', 'j', 'ż', 'f', 'h', 'ó', 'ć', 'ś', 'ń', 'ź', 'x', 'v']
         if len(word_to_guess) == 6:# Words of length 6. Total count 63030
@@ -33,8 +27,7 @@ class HangmanState(object):
             self.freq = ['i', 'e', 'a', 'n', 'o', 'y', 'w', 'z', 'r', 'c', 'm', 's', 'p', 'k', 't', 'u', 'l', 'd', 'j', 'b', 'ł', 'ś', 'g', 'h', 'ą', 'ę', 'f', 'ż', 'ó', 'ń', 'ź', 'ć', 'v']
 
     def parse_to_grep(self):
-        grepped = ''.join(letter if letter != '' else '.' for letter in self.guessed)
-        return grepped
+        return ''.join(letter if letter != '' else '.' for letter in self.guessed)
 
     def count_guess(self):
         for g in self.guessed:

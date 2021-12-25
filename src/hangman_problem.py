@@ -1,6 +1,3 @@
-from random import randint
-
-
 class HangmanProblem(object):
     def __init__(self, initial, alph):
         self.state = initial
@@ -29,15 +26,17 @@ class HangmanProblem(object):
         }
         guesses = list()
 
-        #TODO Think about it more...
+        # Pick letter 'F'...
         for i in range(len(self.state.word)):
             if self.state.word[i] == '4':
                 guesses.append(self.alphabet[4][0])
                 self.alphabet[4].remove(self.alphabet[4][0])
                 break
 
-        # Random polish character.
+        # Random polish character
         # polish = ['ą','ś','ę','ż','ó','ń','ć','ź']
+        # TODO: Picking of random polish character should depend on alphabets type.
+
         # for char in self.state.freq:
         #     if char in polish:
         #         if char == 'ł':
@@ -55,16 +54,21 @@ class HangmanProblem(object):
 
         # Add two potential guesses for last letter
         for i in range(2):
-            guesses.append(self.alphabet[self.state.word[-1]][i])
-            self.alphabet[self.state.word[-1]].remove(self.alphabet[self.state.word[-1]][i])
-
+            try:
+                guesses.append(self.alphabet[self.state.word[-1]][i])
+                self.alphabet[self.state.word[-1]].remove(self.alphabet[self.state.word[-1]][i])
+            except IndexError:
+                continue
 
         # Add two pottential guesses for first letter
         for i in range(2):
-            guesses.append(self.alphabet[self.state.word[0]][i])
-            self.alphabet[self.state.word[0]].remove(self.alphabet[self.state.word[0]][i])
+            try:
+                guesses.append(self.alphabet[self.state.word[0]][i])
+                self.alphabet[self.state.word[0]].remove(self.alphabet[self.state.word[0]][i])
+            except IndexError:
+                continue
 
-        # Fill guesses up to 10.
+        # Fill guesses up to 10
         while len(guesses) < 10:
             for num in [3,1,2]:
                 for _ in range(occurences[num]):

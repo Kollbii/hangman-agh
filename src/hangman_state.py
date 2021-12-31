@@ -1,5 +1,13 @@
+'''
+HangmanState stores initial word from numbers and current state of guessed letters.
+Its main purpouse is to keep track of guessed letters and making pattern for grep serach.
+
+I was thinking about using frequency of letters in words of given length but could not come up with something nice. Relicts.
+'''
+
 class HangmanState(object):
     def __init__(self, word_to_guess: str):
+        self.word_plain = word_to_guess.strip()
         self.word = [int(i) for i in word_to_guess]
         self.guessed = ['' for _ in range(len(word_to_guess))]
         self.count_guesses = 0
@@ -26,9 +34,16 @@ class HangmanState(object):
         if len(word_to_guess) == 15:# Words of length 15. Total count 308641
             self.freq = ['i', 'e', 'a', 'n', 'o', 'y', 'w', 'z', 'r', 'c', 'm', 's', 'p', 'k', 't', 'u', 'l', 'd', 'j', 'b', 'ł', 'ś', 'g', 'h', 'ą', 'ę', 'f', 'ż', 'ó', 'ń', 'ź', 'ć', 'v']
 
+    '''
+    Ex. return '..a..i.orta'.
+    Returns strings witch is passed to `grep` os call. 
+    '''
     def parse_to_grep(self):
         return ''.join(letter if letter != '' else '.' for letter in self.guessed)
 
+    '''
+    Used only to validate if ANY letter was guessed. If so - make os.grep call with pattern.
+    '''
     def count_guess(self):
         for g in self.guessed:
             if g != '':

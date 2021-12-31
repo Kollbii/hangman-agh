@@ -3,87 +3,103 @@
 from hangman_problem import HangmanProblem
 from hangman_state import HangmanState
 
-from datetime import datetime
-from time import sleep, time
-from random import randint
+from time import sleep, time, strftime
+from os import system
 import socket
-import os
 
+global AUTH, CONN, HOST, PORT, ALPHABET, LOGIN, PASSW, GUESSED, SERVER
 
-global AUTH, CONN, HOST, PORT, ALPHABET, LOGIN, PASSW, GUESSED
-
-# Local Jurcz
-HOST='0.0.0.0'
-PORT=7777
-
-# Local Nędz
-# HOST='0.0.0.0'
-# PORT=65432
-
-# Local Kono
-# HOST='0.0.0.0'
-# PORT=12345
-
-# Dyrcz 
-# HOST='136.243.156.120'
-# PORT=50804
-
-# Jurczyk
-# HOST='209.182.238.21'
-# PORT=4444
-
-# Konopek
-# HOST='136.243.156.120'
-# PORT=12186
-
-# Nędza
-# HOST='136.243.156.120'
-# PORT=50804
-
-# Gjorgi :)
-# HOST='31.172.70.25'
-# PORT=130
-
-
+SERVER = 0
 AUTH=False
 CONN=False
 ALPHABET=0
 
-GUESSED=[]
+#TODO: Fix this later
+if SERVER == 0:
+    # Local Jurcz
+    HOST='0.0.0.0'
+    PORT=7777
+    LOGIN='test01\n'
+    PASSW='qq\n'
+if SERVER == 1:
+    # Dyrczu
+    HOST='136.243.156.120'
+    PORT=50804
+    LOGIN='test01\n'
+    PASSW='qq\n'
+if SERVER == 2:
+    # Jurczyk
+    HOST='209.182.238.21'
+    PORT=4444
+    LOGIN='405865\n'
+    PASSW='I9$*z(D7BqU0Hvqd\n'
+if SERVER == 3:
+    # Konopek
+    HOST='136.243.156.120'
+    PORT=12186
+    LOGIN='8\n'
+    PASSW='8\n'
+if SERVER == 4:
+    # Nędza
+    HOST='146.59.45.35'
+    PORT=65432
+    LOGIN='p8\n'
+    PASSW='p\n'
+if SERVER == 5:
+    # Gjorgi :)
+    HOST='31.172.70.25'
+    PORT=130
+    LOGIN='405865\n'
+    PASSW='insert\n'
 
-LOGIN='test01\n'
-PASSW='qq\n'
 
-s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-
+'''Represent current time'''
 def current_time():
-    now = datetime.now().timetuple()
-    return str(f'[{now.tm_hour}:{now.tm_min}:{now.tm_sec}]')
+    return str(strftime('[%-d %b %X]'))
 
+'''Response striped and splited response'''
 def get_response():
     return list(map(lambda x: x.rstrip(), s.recv(64).decode().split('\n')))
 
+'''Writing msg to log_[day]_[month].txt in `logs` dir'''
 def write_to_log(info):
+    #TODO: Make log file for each day/couple of hours or even sessions of games.
     log_msg = f'{current_time()} {info}'
     print(log_msg)
-    os.system("echo '" + log_msg + "' >> log.txt")
+    system("echo '" + log_msg + "' >> ../logs/log_"+str(strftime('%-d_%b'))+".txt")
 
-def search_for_words(state):
+'''System grep call to patterns.txt file. '''
+def search_for_words(problem):
     try:
-        os.system("grep -E '^" + str(state.parse_to_grep()) + "' ../slowa.txt > guess.txt")
+        system("grep -E '^" + str(problem.state.parse_to_grep()) + "' ./patterns.txt > guess.txt")
     except Exception:
-        write_to_log('[ERROR] slowa.txt file not found.')
+        write_to_log('[ERROR] patterns.txt file not found.')
 
-    possible_words = [line for line in [line.strip() for line in open('guess.txt','r').readlines()] if len(line) == len(state.word)]
-    write_to_log(f'{state.parse_to_grep()} for current search: {len(possible_words)}')
-    return possible_words
+    problem.potential_words = [line for line in [line.strip() for line in open('guess.txt','r').readlines()]]
+    write_to_log(f'{problem.state.parse_to_grep()} for current search: {len(problem.potential_words)}')
 
-def guess_word():
-    raise NotImplementedError
 
-def guess_letter():
-    raise NotImplementedError
+'''Guess word, write info to log and receive information from server. Sleep() function is optional but works better on some servers...'''
+def guess_word(possible_word, round):
+    s.send(str("=\n" + str(possible_word) + "\n").encode())
+    write_to_log(f'[{round}] Guessing: {possible_word}')
 
+    sleep(0.05)
+    guessed = get_response()
+    write_to_log(f'Server: {guessed}')
+    return guessed
+
+'''Guess letter, write info to log and receive information from server. Sleep() function is optional but works better on some servers...'''
+def guess_letter(possible_letter, round):
+    s.send(str('+\n' + str(possible_letter) + '\n').encode())
+    write_to_log(f'[{round}] Guessing: {possible_letter}')
+
+    sleep(0.05)
+    guessed = get_response()
+    write_to_log(f'Server: {guessed}')
+    return guessed
+
+'''Connect and update global variables'''
 def get_conn():
     global CONN
     if s.connect((HOST, PORT)):
@@ -91,22 +107,26 @@ def get_conn():
         return True
     return False
 
+'''Close connection and update global variables. Remove files like `guess.txt` and `patterns.txt` from curent dir.'''
 def close_write(start, end):
     global AUTH, CONN
-    write_to_log(f'Total game time: {end-start}\nClosing connection...')
-    os.system('rm -f guess.txt')
+    write_to_log(f'Total game time: {end-start}')
+    write_to_log(f'Closing connection with server')
+    system('rm -f guess.txt')
+    system('rm -f patterns.txt')
     s.close()
     CONN = False
     AUTH = False
-    # Change this sleep later in time...
-    sleep(5)
-    os.system('clear')
+    sleep(2)
 
-
+'''Authenticate and update global variables. Some servers have different type of parsing(?)'''
 def auth():
-    global ALPHABET, AUTH
-    s.send(LOGIN.encode())
-    s.send(PASSW.encode())
+    global ALPHABET, AUTH, SERVER
+    if SERVER != 4:
+        s.send(LOGIN.encode())
+        s.send(PASSW.encode())
+    else:
+        s.send(f"{LOGIN}\n{PASSW}\n".encode())
     
     sleep(0.1)
     msg = s.recv(64).decode().replace('\n', '').replace('\r', '').replace('\0', '')
@@ -125,88 +145,102 @@ def auth():
 
     return False
 
+'''Main func to keep game running.'''
 def game(word_numbers):
-    if word_numbers.isdecimal():
-        start_time = time()
-        p = HangmanProblem(HangmanState(word_numbers), ALPHABET)
-        letters = p.actions()
+    start_time = time() # Probably should delete this. But it will stay for flex now.
+    p = HangmanProblem(HangmanState(word_numbers), ALPHABET)
+    p.words_initial()
+    letters = p.get_letter()
+    i = 0
+    while i < 10:
+        print("Lenngth of potential words",len(p.potential_words))
 
-        possible_words = []
-        i = 0
-        while i < 10:
-            letter = letters[i]
+        #TODO: Look at this. Sometimes error occures. Potential problem is in hangman_problem.py
+        try:
+            letter = letters.pop()
+        except IndexError:
+            break
 
-            if p.state.count_guess() > 1:
-                possible_words = search_for_words(p.state)
+        if p.state.count_guess() > 1:
+            search_for_words(p)
+        
+        if len(p.potential_words) > 0 and len(p.potential_words) < 7:
+            for _ in range(10 - i):
+                guessed = guess_word(p.potential_words.pop(), i)
 
-            if len(possible_words) > 0 and len(possible_words) < 9:
-                for _ in range(10 - i):
-                    # TODO: Get this shit into one function. Same thing under.
-                    s.send(str("=\n" + possible_words[0] + "\n").encode())
-                    write_to_log(f'[{i}] Guessing: {possible_words[0]}')
-                    possible_words.remove(possible_words[0])
-
-                    sleep(0.1)
-                    guessed = get_response()
-                    write_to_log(f'Server: {guessed}')
-
-                    if guessed[0] == "=":
-                        write_to_log('Guessed!')
-                        close_write(start_time, time())
-                        break
-                    
-                    if "?" in guessed:
-                        write_to_log('Got ? closing connection.')
-                        close_write(start_time, time())
-                        break
-
-                    i += 1
-                    if i >= 9:
-                        write_to_log('Out of guesses')
-                        close_write(start_time, time())
-                        break
-            
-            if i == 9:
-                # TODO: Get this shit to one func.
-                s.send(str("=\n" + possible_words[0] + "\n").encode())
-                write_to_log(f'[{i}] Guessing: {possible_words[0]}')
-
-                sleep(0.1)
-                guessed = get_response()
-                write_to_log(f'Server: {guessed}')
-                
-                if guessed[0] == "=":
+                #TODO: those 3 if's can be in one func. Same under
+                if "=" in guessed:
                     write_to_log('Guessed!')
-
-                if "?" in guessed:
-                        write_to_log('Got ? closing connection.')
-                        close_write(start_time, time())
-                        break
-
-                write_to_log('Out of guesses')
-                close_write(start_time, time())
-                break
+                    close_write(start_time, time())
+                    break
                 
-            s.send(str('+\n' + letter + '\n').encode())
-            write_to_log(f'[{i}] Guessing: {letter}')
+                if "?" in guessed:
+                    write_to_log('Got ? closing connection.')
+                    close_write(start_time, time())
+                    break
 
-            sleep(0.1)
+                if "#" in guessed:
+                    write_to_log('Got ignored')
+                    continue
 
-            guessed = get_response()
-            write_to_log(f'Server: {guessed}')
+                i += 1
+                if i > 9:
+                    write_to_log('Out of guesses')
+                    close_write(start_time, time())
+                    break
 
-            if guessed[0] == "=":
-                for gi in [inx for inx, c in enumerate(guessed[1]) if c == '1']:
-                    p.state.guessed[gi] = letter
+        if i == 9:
+            guessed = guess_word(p.potential_words.pop(), i)
+            
+            if "=" in guessed:
+                write_to_log('Guessed!')
 
             if "?" in guessed:
-                write_to_log('Got ? closing connection.')
-                close_write(start_time, time())
-                break
+                    write_to_log('Got ? closing connection.')
+                    close_write(start_time, time())
+                    break
             
-            i+=1
+            if "#" in guessed:
+                    write_to_log('Got ignored')
+                    continue
 
+            write_to_log('Out of guesses')
+            close_write(start_time, time())
+            break
 
+        guessed = guess_letter(letter, i)
+
+        if "=" in guessed:
+            '''Hotfix for Zuza server'''
+            if guessed[1] == '':
+                guessed[1] = get_response()[0]
+
+            times_guessed = 0
+            for gi in [inx for inx, c in enumerate(guessed[1]) if c == '1']:
+                p.state.guessed[gi] = letter
+                times_guessed += 1
+
+            p.update_occurences(letter, times_guessed)
+
+        letters = p.get_letter()
+
+        if "?" in guessed:
+            write_to_log('Got ? closing connection.')
+            close_write(start_time, time())
+            break
+
+        if "#" in guessed:
+            write_to_log('Got ignored')
+            continue
+
+        i+=1
+
+'''
+Main body to keep connection alive. Auto reconecting after closing connection.
+If socket error occurs function will probably do nothing and everything will break.
+#TODO
+'''
+s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 while True:
     try:
         if not CONN:
@@ -219,12 +253,14 @@ while True:
         if not s_messg:
             break
 
-        parsed = s_messg.decode().replace('\n', '').replace('\r', '').replace('\0', '')
+        parsed = s_messg.decode().replace('\n', '').replace('\r', '').replace('\0', '')      
         write_to_log(f'Server: {parsed}')
-
-        game(parsed)
+        
+        if parsed.isdecimal():
+            game(parsed)
         
     except socket.error:
+        #TODO: Make reconecting on error.
         CONN = False
         s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
         while not CONN:

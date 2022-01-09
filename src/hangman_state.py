@@ -35,11 +35,26 @@ class HangmanState(object):
             self.freq = ['i', 'e', 'a', 'n', 'o', 'y', 'w', 'z', 'r', 'c', 'm', 's', 'p', 'k', 't', 'u', 'l', 'd', 'j', 'b', 'ł', 'ś', 'g', 'h', 'ą', 'ę', 'f', 'ż', 'ó', 'ń', 'ź', 'ć', 'v']
 
     '''
-    Ex. return '..a..i.orta'.
     Returns strings witch is passed to `grep` os call. 
+    Ex. return `..a..i.orta`.
     '''
-    def parse_to_grep(self):
-        return ''.join(letter if letter != '' else '.' for letter in self.guessed)
+    def parse_to_grep(self, excluded_letters):
+        excluded = list()
+        for key in excluded_letters:
+            for char in excluded_letters[key]:
+                excluded.append(char)
+
+        grepped = ''
+        for letter in self.guessed:
+            if letter == '':
+                # Add blank space
+                grepped += ''.join('[^')
+                # Add every letter with should not be in this position
+                grepped += ''.join(''.join(excluded)+']')
+            else:
+                grepped += ''.join(letter)
+        print(grepped)
+        return grepped
 
     '''
     Used only to validate if ANY letter was guessed. If so - make os.grep call with pattern.
@@ -51,16 +66,4 @@ class HangmanState(object):
         return self.count_guesses
 
     def __str__(self):
-        return str(self.guessed)
-
-
-# FREQ
-# [
-# ('a', 3247927), ('i', 3080304), ('o', 2788744), ('e', 2618919), ('n', 2330082),
-# ('y', 1704475), ('z', 1605538), ('w', 1590569), ('r', 1512008), ('c', 1421653), 
-# ('m', 1322815), ('s', 1138514), ('k', 1117255), ('p', 1030945), ('u', 948726), 
-# ('t', 941896), ('l', 824796), ('d', 757885), ('ł', 725859), ('j', 679055), 
-# ('b', 664015), ('g', 450008), ('ą', 445483), ('h', 396620), ('ś', 355140), 
-# ('ę', 222111), ('ż', 220988), ('f', 153935), ('ó', 120008), ('ń', 103665), 
-# ('ć', 47021), ('ź', 24602), ('x', 658), ('v', 288), ('q', 21)
-# ]
+        return ''.join(char if char != '' else '.' for char in self.guessed)

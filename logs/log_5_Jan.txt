@@ -1,0 +1,668 @@
+[5 Jan 00:00:15] Server: 11131
+[5 Jan 00:00:16] [0] Guessing: a
+[5 Jan 00:00:17] Server: [=, ]
+[5 Jan 00:00:17] .a... for current search: 178
+[5 Jan 00:00:17] [1] Guessing: i
+[5 Jan 00:00:19] Server: [!, ]
+[5 Jan 00:00:19] .a... for current search: 145
+[5 Jan 00:00:19] [2] Guessing: m
+[5 Jan 00:00:20] Server: [!, ]
+[5 Jan 00:00:20] .a... for current search: 86
+[5 Jan 00:00:20] [3] Guessing: o
+[5 Jan 00:00:22] Server: [!, ]
+[5 Jan 00:00:22] .a... for current search: 64
+[5 Jan 00:00:22] [4] Guessing: w
+[5 Jan 00:00:23] Server: [=, ]
+[5 Jan 00:00:23] wa... for current search: 20
+[5 Jan 00:00:23] [5] Guessing: u
+[5 Jan 00:00:25] Server: [!, ]
+[5 Jan 00:00:25] wa... for current search: 18
+[5 Jan 00:00:25] [6] Guessing: ą
+[5 Jan 00:00:26] Server: [!, ]
+[5 Jan 00:00:26] wa... for current search: 10
+[5 Jan 00:00:26] [7] Guessing: r
+[5 Jan 00:00:28] Server: [!, ]
+[5 Jan 00:00:28] wa... for current search: 7
+[5 Jan 00:00:28] [8] Guessing: t
+[5 Jan 00:00:29] Server: [!, ]
+[5 Jan 00:00:29] wa... for current search: 6
+[5 Jan 00:00:29] [9] Guessing: wachę
+[5 Jan 00:00:31] Server: [wachę, 2, ?, ]
+[5 Jan 00:00:31] Got ? closing connection.
+[5 Jan 00:00:31] Total game time: 15.09108591079712
+[5 Jan 00:00:31] Closing connection with server
+[5 Jan 00:00:31] Out of guesses
+[5 Jan 00:00:32] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:00:46] Server: 311111111
+[5 Jan 00:00:46] [0] Guessing: i
+[5 Jan 00:00:47] Server: [=, ]
+[5 Jan 00:00:47] .....i... for current search: 215
+[5 Jan 00:00:47] [1] Guessing: a
+[5 Jan 00:00:49] Server: [!, ]
+[5 Jan 00:00:49] .....i... for current search: 96
+[5 Jan 00:00:49] [2] Guessing: n
+[5 Jan 00:00:50] Server: [=, ]
+[5 Jan 00:00:50] ....ni... for current search: 38
+[5 Jan 00:00:50] [3] Guessing: z
+[5 Jan 00:00:52] Server: [=, ]
+[5 Jan 00:00:52] ...zni..z for current search: 1
+[5 Jan 00:00:52] [4] Guessing: dorzniesz
+[5 Jan 00:00:53] Server: [dorzniesz, 4, ?, ]
+[5 Jan 00:00:53] Got ? closing connection.
+[5 Jan 00:00:53] Total game time: 7.134666919708252
+[5 Jan 00:00:53] Closing connection with server
+[5 Jan 00:00:54] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:01:17] Server: 1212112
+[5 Jan 00:01:17] [0] Guessing: y
+[5 Jan 00:01:18] Server: [=, ]
+[5 Jan 00:01:18] ......y for current search: 42
+[5 Jan 00:01:18] [1] Guessing: j
+[5 Jan 00:01:19] Server: [=, ]
+[5 Jan 00:01:19] ...j..y for current search: 32
+[5 Jan 00:01:19] [2] Guessing: a
+[5 Jan 00:01:21] Server: [!, ]
+[5 Jan 00:01:21] ...j..y for current search: 12
+[5 Jan 00:01:21] [3] Guessing: i
+[5 Jan 00:01:22] Server: [!, ]
+[5 Jan 00:01:22] ...j..y for current search: 7
+[5 Jan 00:01:22] [4] Guessing: e
+[5 Jan 00:01:24] Server: [=, ]
+[5 Jan 00:01:24] e.ej..y for current search: 1
+[5 Jan 00:01:24] [5] Guessing: egejscy
+[5 Jan 00:01:25] Server: [egejscy, 4, ?, ]
+[5 Jan 00:01:25] Got ? closing connection.
+[5 Jan 00:01:25] Total game time: 8.737294435501099
+[5 Jan 00:01:25] Closing connection with server
+[5 Jan 00:01:26] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:01:47] Server: 111312311111
+[5 Jan 00:01:47] [0] Guessing: i
+[5 Jan 00:01:48] Server: [!, ]
+[5 Jan 00:01:48] ............ for current search: 14
+[5 Jan 00:01:48] [1] Guessing: e
+[5 Jan 00:01:50] Server: [!, ]
+[5 Jan 00:01:50] ............ for current search: 7
+[5 Jan 00:01:50] [2] Guessing: a
+[5 Jan 00:01:52] Server: [=, ]
+[5 Jan 00:01:52] .aa......a.a for current search: 1
+[5 Jan 00:01:52] [3] Guessing: zaadoptowana
+[5 Jan 00:01:54] Server: [=, ]
+[5 Jan 00:01:54] Guessed!
+[5 Jan 00:01:54] Total game time: 6.416894197463989
+[5 Jan 00:01:54] Closing connection with server
+[5 Jan 00:01:55] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:02:18] Server: 1311111112121
+[5 Jan 00:02:18] [0] Guessing: m
+[5 Jan 00:02:18] Server: [=, ]
+[5 Jan 00:02:18] ..........m.. for current search: 23
+[5 Jan 00:02:18] [1] Guessing: o
+[5 Jan 00:02:21] Server: [=, ]
+[5 Jan 00:02:21] ......o...m.. for current search: 1
+[5 Jan 00:02:21] [2] Guessing: starasowujmyż
+[5 Jan 00:02:23] Server: [=, ]
+[5 Jan 00:02:23] Guessed!
+[5 Jan 00:02:23] Total game time: 4.958764314651489
+[5 Jan 00:02:23] Closing connection with server
+[5 Jan 00:02:24] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:02:48] Server: 111111131121111
+[5 Jan 00:02:49] [0] Guessing: n
+[5 Jan 00:02:49] Server: [=, ]
+[5 Jan 00:02:49] n..n........n.. for current search: 3
+[5 Jan 00:02:49] [1] Guessing: nienazabiegania
+[5 Jan 00:02:51] Server: [!, ]
+[5 Jan 00:02:51] [2] Guessing: nienazabieganie
+[5 Jan 00:02:52] Server: [!, ]
+[5 Jan 00:02:52] [3] Guessing: nienazabieganiu
+[5 Jan 00:02:54] Server: [=, ]
+[5 Jan 00:02:54] Guessed!
+[5 Jan 00:02:54] Total game time: 5.273064851760864
+[5 Jan 00:02:54] Closing connection with server
+[5 Jan 00:02:55] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:03:19] Server: 11111111132112
+[5 Jan 00:03:19] [0] Guessing: y
+[5 Jan 00:03:20] Server: [=, ]
+[5 Jan 00:03:20] ..........y..y for current search: 123
+[5 Jan 00:03:20] [1] Guessing: a
+[5 Jan 00:03:22] Server: [=, ]
+[5 Jan 00:03:22] ..a.....a.y..y for current search: 8
+[5 Jan 00:03:22] [2] Guessing: m
+[5 Jan 00:03:23] Server: [=, ]
+[5 Jan 00:03:23] ..a.....a.y.my for current search: 3
+[5 Jan 00:03:23] [3] Guessing: onanizowałyśmy
+[5 Jan 00:03:25] Server: [=, ]
+[5 Jan 00:03:25] Guessed!
+[5 Jan 00:03:25] Total game time: 5.620265245437622
+[5 Jan 00:03:25] Closing connection with server
+[5 Jan 00:03:26] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:03:49] Server: 111113111131321
+[5 Jan 00:03:50] [0] Guessing: a
+[5 Jan 00:03:51] Server: [=, ]
+[5 Jan 00:03:51] a........a.a... for current search: 2
+[5 Jan 00:03:51] [1] Guessing: amnestiowałabym
+[5 Jan 00:03:53] Server: [=, ]
+[5 Jan 00:03:53] Guessed!
+[5 Jan 00:03:53] Total game time: 3.1000816822052
+[5 Jan 00:03:53] Closing connection with server
+[5 Jan 00:03:54] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:04:20] Server: 211111131211
+[5 Jan 00:04:20] [0] Guessing: e
+[5 Jan 00:04:21] Server: [=, ]
+[5 Jan 00:04:21] ...e.......e for current search: 27
+[5 Jan 00:04:21] [1] Guessing: p
+[5 Jan 00:04:23] Server: [=, ]
+[5 Jan 00:04:23] p..e.......e for current search: 27
+[5 Jan 00:04:23] [2] Guessing: r
+[5 Jan 00:04:24] Server: [=, ]
+[5 Jan 00:04:24] pr.e.......e for current search: 19
+[5 Jan 00:04:24] [3] Guessing: j
+[5 Jan 00:04:26] Server: [=, ]
+[5 Jan 00:04:26] pr.e.....j.e for current search: 19
+[5 Jan 00:04:26] [4] Guessing: a
+[5 Jan 00:04:27] Server: [=, ]
+[5 Jan 00:04:27] pr.e..a..j.e for current search: 3
+[5 Jan 00:04:27] [5] Guessing: przecwałujże
+[5 Jan 00:04:29] Server: [!, ]
+[5 Jan 00:04:29] [6] Guessing: przesiadujże
+[5 Jan 00:04:30] Server: [!, ]
+[5 Jan 00:04:30] [7] Guessing: przewiadujże
+[5 Jan 00:04:32] Server: [=, ]
+[5 Jan 00:04:32] Guessed!
+[5 Jan 00:04:32] Total game time: 11.395730972290039
+[5 Jan 00:04:32] Closing connection with server
+[5 Jan 00:04:33] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:04:51] Server: 113313113
+[5 Jan 00:04:51] [0] Guessing: a
+[5 Jan 00:04:52] Server: [=, ]
+[5 Jan 00:04:52] .a..a.... for current search: 2
+[5 Jan 00:04:52] [1] Guessing: zakładnik
+[5 Jan 00:04:53] Server: [!, ]
+[5 Jan 00:04:53] [2] Guessing: zakładzik
+[5 Jan 00:04:55] Server: [=, ]
+[5 Jan 00:04:55] Guessed!
+[5 Jan 00:04:55] Total game time: 4.163099765777588
+[5 Jan 00:04:55] Closing connection with server
+[5 Jan 00:04:56] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:07:28] Closing connection by KeyboardInterrupt
+[5 Jan 00:07:32] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:07:54] Server: 11111131
+[5 Jan 00:07:55] [0] Guessing: a
+[5 Jan 00:07:55] Server: [!, ]
+[5 Jan 00:07:55] ........ for current search: 1011
+[5 Jan 00:07:55] [1] Guessing: i
+[5 Jan 00:07:57] Server: [=, ]
+[5 Jan 00:07:57] ..i..... for current search: 55
+[5 Jan 00:07:57] [2] Guessing: o
+[5 Jan 00:07:58] Server: [=, ]
+[5 Jan 00:07:58] o.i....o for current search: 5
+[5 Jan 00:07:58] [3] Guessing: z
+[5 Jan 00:08:00] Server: [=, ]
+[5 Jan 00:08:00] ozi....o for current search: 1
+[5 Jan 00:08:00] [4] Guessing: ozimówko
+[5 Jan 00:08:01] Server: [=, ]
+[5 Jan 00:08:01] Guessed!
+[5 Jan 00:08:01] Total game time: 6.733103275299072
+[5 Jan 00:08:01] Closing connection with server
+[5 Jan 00:08:02] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:08:25] Server: 2111111131112
+[5 Jan 00:08:25] [0] Guessing: i
+[5 Jan 00:08:25] Server: [!, ]
+[5 Jan 00:08:25] ............. for current search: 12
+[5 Jan 00:08:25] [1] Guessing: o
+[5 Jan 00:08:27] Server: [!, ]
+[5 Jan 00:08:27] ............. for current search: 3
+[5 Jan 00:08:27] [2] Guessing: przesmradzamy
+[5 Jan 00:08:29] Server: [!, ]
+[5 Jan 00:08:29] [3] Guessing: przesmradzany
+[5 Jan 00:08:30] Server: [!, ]
+[5 Jan 00:08:30] [4] Guessing: przeszastanej
+[5 Jan 00:08:32] Server: [=, ]
+[5 Jan 00:08:32] Guessed!
+[5 Jan 00:08:32] Total game time: 6.555924892425537
+[5 Jan 00:08:32] Closing connection with server
+[5 Jan 00:08:33] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:08:56] Server: 111111131311
+[5 Jan 00:08:56] [0] Guessing: e
+[5 Jan 00:08:56] Server: [=, ]
+[5 Jan 00:08:56] ..e...e..... for current search: 7
+[5 Jan 00:08:56] [1] Guessing: i
+[5 Jan 00:08:58] Server: [=, ]
+[5 Jan 00:08:58] .ie..ie...i. for current search: 2
+[5 Jan 00:08:58] [2] Guessing: nieanielskim
+[5 Jan 00:08:59] Server: [!, ]
+[5 Jan 00:08:59] [3] Guessing: nieosielskim
+[5 Jan 00:09:01] Server: [=, ]
+[5 Jan 00:09:01] Guessed!
+[5 Jan 00:09:01] Total game time: 4.995031833648682
+[5 Jan 00:09:01] Closing connection with server
+[5 Jan 00:09:02] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:09:26] Server: 313131113232
+[5 Jan 00:09:26] [0] Guessing: y
+[5 Jan 00:09:27] Server: [=, ]
+[5 Jan 00:09:27] .........y.y for current search: 22
+[5 Jan 00:09:27] [1] Guessing: o
+[5 Jan 00:09:29] Server: [=, ]
+[5 Jan 00:09:29] .....o...y.y for current search: 12
+[5 Jan 00:09:29] [2] Guessing: a
+[5 Jan 00:09:30] Server: [=, ]
+[5 Jan 00:09:30] .a...o.a.y.y for current search: 4
+[5 Jan 00:09:30] [3] Guessing: w
+[5 Jan 00:09:32] Server: [=, ]
+[5 Jan 00:09:32] .a...owa.y.y for current search: 4
+[5 Jan 00:09:32] [4] Guessing: t
+[5 Jan 00:09:33] Server: [=, ]
+[5 Jan 00:09:33] .at..owa.y.y for current search: 1
+[5 Jan 00:09:33] [5] Guessing: batikowałyby
+[5 Jan 00:09:35] Server: [=, 12, ?, ]
+[5 Jan 00:09:35] Guessed!
+[5 Jan 00:09:35] Total game time: 8.297666072845459
+[5 Jan 00:09:35] Closing connection with server
+[5 Jan 00:09:36] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:09:57] Server: 1211112113132
+[5 Jan 00:09:57] [0] Guessing: y
+[5 Jan 00:09:57] Server: [=, 0100001000001, ]
+[5 Jan 00:09:57] .y....y.....y for current search: 21
+[5 Jan 00:09:57] [1] Guessing: w
+[5 Jan 00:10:00] Server: [=, ]
+[5 Jan 00:10:00] wy....yw....y for current search: 12
+[5 Jan 00:10:00] [2] Guessing: a
+[5 Jan 00:10:02] Server: [=, ]
+[5 Jan 00:10:02] wy....ywa.a.y for current search: 4
+[5 Jan 00:10:02] [3] Guessing: s
+[5 Jan 00:10:03] Server: [=, ]
+[5 Jan 00:10:03] wys...ywa.a.y for current search: 1
+[5 Jan 00:10:03] [4] Guessing: wyszczywałaby
+[5 Jan 00:10:05] Server: [=, ]
+[5 Jan 00:10:05] Guessed!
+[5 Jan 00:10:05] Total game time: 7.881321907043457
+[5 Jan 00:10:05] Closing connection with server
+[5 Jan 00:10:06] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:10:27] Server: 1112113132112
+[5 Jan 00:10:28] [0] Guessing: y
+[5 Jan 00:10:29] Server: [=, ]
+[5 Jan 00:10:29] ...y.....y..y for current search: 25
+[5 Jan 00:10:29] [1] Guessing: i
+[5 Jan 00:10:31] Server: [=, ]
+[5 Jan 00:10:31] ...y...i.y..y for current search: 21
+[5 Jan 00:10:31] [2] Guessing: a
+[5 Jan 00:10:32] Server: [=, ]
+[5 Jan 00:10:32] ...y.a.i.y..y for current search: 11
+[5 Jan 00:10:32] [3] Guessing: ś
+[5 Jan 00:10:34] Server: [=, ]
+[5 Jan 00:10:34] ...y.a.i.yś.y for current search: 11
+[5 Jan 00:10:34] [4] Guessing: m
+[5 Jan 00:10:35] Server: [=, ]
+[5 Jan 00:10:35] ...y.a.i.yśmy for current search: 11
+[5 Jan 00:10:35] [5] Guessing: z
+[5 Jan 00:10:37] Server: [=, ]
+[5 Jan 00:10:37] ..zy.a.i.yśmy for current search: 4
+[5 Jan 00:10:37] [6] Guessing: w
+[5 Jan 00:10:38] Server: [=, ]
+[5 Jan 00:10:38] w.zywa.i.yśmy for current search: 1
+[5 Jan 00:10:38] [7] Guessing: wszywalibyśmy
+[5 Jan 00:10:40] Server: [=, ]
+[5 Jan 00:10:40] Guessed!
+[5 Jan 00:10:40] Total game time: 12.177383661270142
+[5 Jan 00:10:40] Closing connection with server
+[5 Jan 00:10:41] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:10:58] Server: 111113111
+[5 Jan 00:10:58] [0] Guessing: i
+[5 Jan 00:10:58] Server: [=, 000000001, ]
+[5 Jan 00:10:58] ........i for current search: 398
+[5 Jan 00:10:58] [1] Guessing: a
+[5 Jan 00:11:01] Server: [=, ]
+[5 Jan 00:11:01] .a....a.i for current search: 43
+[5 Jan 00:11:01] [2] Guessing: m
+[5 Jan 00:11:03] Server: [=, ]
+[5 Jan 00:11:03] .a....ami for current search: 23
+[5 Jan 00:11:03] [3] Guessing: z
+[5 Jan 00:11:04] Server: [!, ]
+[5 Jan 00:11:04] .a....ami for current search: 11
+[5 Jan 00:11:04] [4] Guessing: n
+[5 Jan 00:11:06] Server: [!, ]
+[5 Jan 00:11:06] .a....ami for current search: 3
+[5 Jan 00:11:06] [5] Guessing: racuchami
+[5 Jan 00:11:07] Server: [!, ]
+[5 Jan 00:11:07] [6] Guessing: wasążkami
+[5 Jan 00:11:09] Server: [!, ]
+[5 Jan 00:11:09] [7] Guessing: żarówkami
+[5 Jan 00:11:10] Server: [=, ]
+[5 Jan 00:11:10] Guessed!
+[5 Jan 00:11:10] Total game time: 12.296432971954346
+[5 Jan 00:11:10] Closing connection with server
+[5 Jan 00:11:11] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:11:29] Server: 3131111
+[5 Jan 00:11:29] [0] Guessing: a
+[5 Jan 00:11:31] Server: [=, ]
+[5 Jan 00:11:31] ....a.a for current search: 13
+[5 Jan 00:11:31] [1] Guessing: o
+[5 Jan 00:11:32] Server: [=, ]
+[5 Jan 00:11:32] .o..a.a for current search: 5
+[5 Jan 00:11:32] [2] Guessing: n
+[5 Jan 00:11:34] Server: [=, ]
+[5 Jan 00:11:34] .o..ana for current search: 3
+[5 Jan 00:11:34] [3] Guessing: dobrana
+[5 Jan 00:11:35] Server: [!, ]
+[5 Jan 00:11:35] [4] Guessing: dolmana
+[5 Jan 00:11:37] Server: [=, ]
+[5 Jan 00:11:37] Guessed!
+[5 Jan 00:11:37] Total game time: 8.02201771736145
+[5 Jan 00:11:37] Closing connection with server
+[5 Jan 00:11:38] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:11:59] Server: 11111111
+[5 Jan 00:12:00] [0] Guessing: i
+[5 Jan 00:12:01] Server: [=, ]
+[5 Jan 00:12:01] ......i. for current search: 868
+[5 Jan 00:12:01] [1] Guessing: a
+[5 Jan 00:12:03] Server: [=, ]
+[5 Jan 00:12:03] .a.a..i. for current search: 24
+[5 Jan 00:12:03] [2] Guessing: e
+[5 Jan 00:12:04] Server: [!, ]
+[5 Jan 00:12:04] .a.a..i. for current search: 8
+[5 Jan 00:12:04] [3] Guessing: n
+[5 Jan 00:12:06] Server: [=, ]
+[5 Jan 00:12:06] na.a..i. for current search: 2
+[5 Jan 00:12:06] [4] Guessing: namaścić
+[5 Jan 00:12:07] Server: [!, ]
+[5 Jan 00:12:07] [5] Guessing: nażarciu
+[5 Jan 00:12:09] Server: [=, ]
+[5 Jan 00:12:09] Guessed!
+[5 Jan 00:12:09] Total game time: 9.265211582183838
+[5 Jan 00:12:09] Closing connection with server
+[5 Jan 00:12:10] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:12:30] Server: 1211211332
+[5 Jan 00:12:30] [0] Guessing: y
+[5 Jan 00:12:31] Server: [=, ]
+[5 Jan 00:12:31] ....y....y for current search: 5
+[5 Jan 00:12:31] [1] Guessing: w
+[5 Jan 00:12:33] Server: [=, ]
+[5 Jan 00:12:33] ....yw...y for current search: 4
+[5 Jan 00:12:33] [2] Guessing: s
+[5 Jan 00:12:34] Server: [=, ]
+[5 Jan 00:12:34] ...syw...y for current search: 2
+[5 Jan 00:12:34] [3] Guessing: opasywałby
+[5 Jan 00:12:36] Server: [!, ]
+[5 Jan 00:12:36] [4] Guessing: opisywałby
+[5 Jan 00:12:37] Server: [=, ]
+[5 Jan 00:12:37] Guessed!
+[5 Jan 00:12:37] Total game time: 7.104604005813599
+[5 Jan 00:12:37] Closing connection with server
+[5 Jan 00:12:38] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:13:01] Server: 131111111
+[5 Jan 00:13:01] [0] Guessing: i
+[5 Jan 00:13:01] Server: [=, ]
+[5 Jan 00:13:01] ......i.. for current search: 397
+[5 Jan 00:13:01] [1] Guessing: a
+[5 Jan 00:13:03] Server: [=, ]
+[5 Jan 00:13:03] ..a...i.. for current search: 34
+[5 Jan 00:13:03] [2] Guessing: o
+[5 Jan 00:13:04] Server: [!, ]
+[5 Jan 00:13:04] ..a...i.. for current search: 14
+[5 Jan 00:13:04] [3] Guessing: s
+[5 Jan 00:13:06] Server: [=, ]
+[5 Jan 00:13:06] s.a...i.. for current search: 6
+[5 Jan 00:13:06] [4] Guessing: c
+[5 Jan 00:13:07] Server: [=, ]
+[5 Jan 00:13:07] s.a..ci.. for current search: 4
+[5 Jan 00:13:07] [5] Guessing: k
+[5 Jan 00:13:09] Server: [=, ]
+[5 Jan 00:13:09] ska..ci.. for current search: 4
+[5 Jan 00:13:09] [6] Guessing: e
+[5 Jan 00:13:10] Server: [=, ]
+[5 Jan 00:13:11] ska..cie. for current search: 4
+[5 Jan 00:13:11] [7] Guessing: z
+[5 Jan 00:13:12] Server: [!, ]
+[5 Jan 00:13:12] ska..cie. for current search: 3
+[5 Jan 00:13:12] [8] Guessing: skarćcież
+[5 Jan 00:13:13] Server: [!, ]
+[5 Jan 00:13:13] [9] Guessing: skarmcież
+[5 Jan 00:13:15] Server: [!, ]
+[5 Jan 00:13:15] Out of guesses
+[5 Jan 00:13:15] Total game time: 14.376217603683472
+[5 Jan 00:13:15] Closing connection with server
+[5 Jan 00:13:16] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:13:31] Server: 31111131111211
+[5 Jan 00:13:32] [0] Guessing: i
+[5 Jan 00:13:32] Server: [!, ]
+[5 Jan 00:13:32] .............. for current search: 3
+[5 Jan 00:13:32] [1] Guessing: kwarantannując
+[5 Jan 00:13:33] Server: [!, ]
+[5 Jan 00:13:33] [2] Guessing: kwarantannujże
+[5 Jan 00:13:35] Server: [=, 5, ?, ]
+[5 Jan 00:13:35] Guessed!
+[5 Jan 00:13:35] Total game time: 3.4893808364868164
+[5 Jan 00:13:35] Closing connection with server
+[5 Jan 00:13:36] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:14:02] Server: 12131231321111
+[5 Jan 00:14:02] [0] Guessing: wychwytałyście
+[5 Jan 00:14:03] Server: [=, 5, ?, ]
+[5 Jan 00:14:03] Guessed!
+[5 Jan 00:14:03] Total game time: 1.1895484924316406
+[5 Jan 00:14:03] Closing connection with server
+[5 Jan 00:14:04] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:14:33] Server: 1311313133131
+[5 Jan 00:14:33] [0] Guessing: skartabellatu
+[5 Jan 00:14:34] Server: [=, 5, ?, ]
+[5 Jan 00:14:34] Guessed!
+[5 Jan 00:14:34] Total game time: 0.9723303318023682
+[5 Jan 00:14:34] Closing connection with server
+[5 Jan 00:14:35] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:15:03] Server: 21211221113
+[5 Jan 00:15:04] [0] Guessing: pryncypiach
+[5 Jan 00:15:04] Server: [!, ]
+[5 Jan 00:15:04] [1] Guessing: poprzypinał
+[5 Jan 00:15:06] Server: [=, ]
+[5 Jan 00:15:06] Guessed!
+[5 Jan 00:15:06] Total game time: 2.2674014568328857
+[5 Jan 00:15:06] Closing connection with server
+[5 Jan 00:15:07] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:15:34] Server: 11133131
+[5 Jan 00:15:34] [0] Guessing: a
+[5 Jan 00:15:34] Server: [=, 00100100, ]
+[5 Jan 00:15:34] ..a..a.. for current search: 12
+[5 Jan 00:15:34] [1] Guessing: l
+[5 Jan 00:15:37] Server: [=, ]
+[5 Jan 00:15:37] ..alla.. for current search: 4
+[5 Jan 00:15:37] [2] Guessing: k
+[5 Jan 00:15:39] Server: [=, ]
+[5 Jan 00:15:39] ..allak. for current search: 4
+[5 Jan 00:15:39] [3] Guessing: o
+[5 Jan 00:15:40] Server: [!, ]
+[5 Jan 00:15:40] ..allak. for current search: 3
+[5 Jan 00:15:40] [4] Guessing: muallaką
+[5 Jan 00:15:42] Server: [!, ]
+[5 Jan 00:15:42] [5] Guessing: muallakę
+[5 Jan 00:15:43] Server: [!, ]
+[5 Jan 00:15:43] [6] Guessing: muallaki
+[5 Jan 00:15:45] Server: [=, ]
+[5 Jan 00:15:45] Guessed!
+[5 Jan 00:15:45] Total game time: 10.95700716972351
+[5 Jan 00:15:45] Closing connection with server
+[5 Jan 00:15:46] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:16:04] Server: 211111111111
+[5 Jan 00:16:05] [0] Guessing: i
+[5 Jan 00:16:05] Server: [=, ]
+[5 Jan 00:16:05] ...i..i..i.. for current search: 21
+[5 Jan 00:16:05] [1] Guessing: e
+[5 Jan 00:16:07] Server: [=, ]
+[5 Jan 00:16:07] ...i..ie.ie. for current search: 2
+[5 Jan 00:16:07] [2] Guessing: powięzieniem
+[5 Jan 00:16:08] Server: [=, ]
+[5 Jan 00:16:08] Guessed!
+[5 Jan 00:16:08] Total game time: 3.6726741790771484
+[5 Jan 00:16:08] Closing connection with server
+[5 Jan 00:16:09] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:16:35] Server: 1223113112
+[5 Jan 00:16:35] [0] Guessing: y
+[5 Jan 00:16:37] Server: [=, ]
+[5 Jan 00:16:37] .y........ for current search: 1
+[5 Jan 00:16:37] [1] Guessing: ryglickiej
+[5 Jan 00:16:38] Server: [=, ]
+[5 Jan 00:16:38] Guessed!
+[5 Jan 00:16:38] Total game time: 3.010396957397461
+[5 Jan 00:16:38] Closing connection with server
+[5 Jan 00:16:39] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:17:06] Server: 2111331213132
+[5 Jan 00:17:06] [0] Guessing: a
+[5 Jan 00:17:07] Server: [=, ]
+[5 Jan 00:17:07] ...a....a.... for current search: 4
+[5 Jan 00:17:07] [1] Guessing: b
+[5 Jan 00:17:08] Server: [=, ]
+[5 Jan 00:17:08] ...a....a..b. for current search: 4
+[5 Jan 00:17:08] [2] Guessing: o
+[5 Jan 00:17:10] Server: [=, ]
+[5 Jan 00:17:10] .o.a....a.ob. for current search: 2
+[5 Jan 00:17:10] [3] Guessing: ponaklejałoby
+[5 Jan 00:17:11] Server: [!, ]
+[5 Jan 00:17:11] [4] Guessing: pozaklejałoby
+[5 Jan 00:17:13] Server: [=, ]
+[5 Jan 00:17:13] Guessed!
+[5 Jan 00:17:13] Total game time: 6.712664365768433
+[5 Jan 00:17:13] Closing connection with server
+[5 Jan 00:17:14] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:17:36] Server: 11313111332
+[5 Jan 00:17:37] [0] Guessing: a
+[5 Jan 00:17:37] Server: [=, ]
+[5 Jan 00:17:37] .......a... for current search: 16
+[5 Jan 00:17:37] [1] Guessing: b
+[5 Jan 00:17:38] Server: [=, ]
+[5 Jan 00:17:39] .......a.b. for current search: 13
+[5 Jan 00:17:39] [2] Guessing: o
+[5 Jan 00:17:40] Server: [=, ]
+[5 Jan 00:17:40] .....o.a.b. for current search: 5
+[5 Jan 00:17:40] [3] Guessing: y
+[5 Jan 00:17:41] Server: [=, ]
+[5 Jan 00:17:42] .....o.a.by for current search: 5
+[5 Jan 00:17:42] [4] Guessing: ł
+[5 Jan 00:17:43] Server: [=, ]
+[5 Jan 00:17:43] .....o.ałby for current search: 5
+[5 Jan 00:17:43] [5] Guessing: u
+[5 Jan 00:17:45] Server: [=, ]
+[5 Jan 00:17:45] ...u.o.ałby for current search: 3
+[5 Jan 00:17:45] [6] Guessing: indukowałby
+[5 Jan 00:17:46] Server: [!, ]
+[5 Jan 00:17:46] [7] Guessing: redukowałby
+[5 Jan 00:17:48] Server: [!, ]
+[5 Jan 00:17:48] [8] Guessing: sztukowałby
+[5 Jan 00:17:49] Server: [=, ]
+[5 Jan 00:17:49] Guessed!
+[5 Jan 00:17:49] Total game time: 12.529969692230225
+[5 Jan 00:17:49] Closing connection with server
+[5 Jan 00:17:50] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:18:07] Server: 11112131111111
+[5 Jan 00:18:07] [0] Guessing: i
+[5 Jan 00:18:07] Server: [=, ]
+[5 Jan 00:18:07] .i............ for current search: 94
+[5 Jan 00:18:07] [1] Guessing: n
+[5 Jan 00:18:09] Server: [=, ]
+[5 Jan 00:18:09] ni........n... for current search: 29
+[5 Jan 00:18:09] [2] Guessing: e
+[5 Jan 00:18:11] Server: [=, ]
+[5 Jan 00:18:11] nie.......ne.. for current search: 26
+[5 Jan 00:18:11] [3] Guessing: a
+[5 Jan 00:18:12] Server: [!, ]
+[5 Jan 00:18:12] nie.......ne.. for current search: 6
+[5 Jan 00:18:12] [4] Guessing: m
+[5 Jan 00:18:14] Server: [=, ]
+[5 Jan 00:18:14] nie.......nem. for current search: 5
+[5 Jan 00:18:14] [5] Guessing: ł
+[5 Jan 00:18:15] Server: [=, ]
+[5 Jan 00:18:15] nie...ł...nem. for current search: 3
+[5 Jan 00:18:15] [6] Guessing: nieogołoconemu
+[5 Jan 00:18:17] Server: [!, ]
+[5 Jan 00:18:17] [7] Guessing: niewysłużonemu
+[5 Jan 00:18:18] Server: [=, ]
+[5 Jan 00:18:18] Guessed!
+[5 Jan 00:18:18] Total game time: 11.007968664169312
+[5 Jan 00:18:18] Closing connection with server
+[5 Jan 00:18:19] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:18:38] Server: 313111131
+[5 Jan 00:18:38] [0] Guessing: k
+[5 Jan 00:18:39] Server: [!, ]
+[5 Jan 00:18:39] ......... for current search: 162
+[5 Jan 00:18:39] [1] Guessing: a
+[5 Jan 00:18:40] Server: [=, ]
+[5 Jan 00:18:40] .....a..a for current search: 4
+[5 Jan 00:18:40] [2] Guessing: o
+[5 Jan 00:18:42] Server: [!, ]
+[5 Jan 00:18:42] .....a..a for current search: 4
+[5 Jan 00:18:42] [3] Guessing: ł
+[5 Jan 00:18:43] Server: [=, ]
+[5 Jan 00:18:43] ..ł..a..a for current search: 2
+[5 Jan 00:18:43] [4] Guessing: bułczasta
+[5 Jan 00:18:45] Server: [=, 8, ?, ]
+[5 Jan 00:18:45] Guessed!
+[5 Jan 00:18:45] Total game time: 6.8015360832214355
+[5 Jan 00:18:45] Closing connection with server
+[5 Jan 00:18:46] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:19:08] Server: 11311111211213
+[5 Jan 00:19:09] [0] Guessing: c
+[5 Jan 00:19:09] Server: [=, ]
+[5 Jan 00:19:09] ..........c.c. for current search: 37
+[5 Jan 00:19:09] [1] Guessing: a
+[5 Jan 00:19:10] Server: [=, ]
+[5 Jan 00:19:11] .a..a..a..c.c. for current search: 6
+[5 Jan 00:19:11] [2] Guessing: ą
+[5 Jan 00:19:12] Server: [=, ]
+[5 Jan 00:19:12] .a..a..a.ąc.c. for current search: 6
+[5 Jan 00:19:12] [3] Guessing: y
+[5 Jan 00:19:13] Server: [=, ]
+[5 Jan 00:19:14] .a..a..a.ącyc. for current search: 6
+[5 Jan 00:19:14] [4] Guessing: h
+[5 Jan 00:19:15] Server: [=, ]
+[5 Jan 00:19:15] .a..a..a.ących for current search: 6
+[5 Jan 00:19:15] [5] Guessing: w
+[5 Jan 00:19:17] Server: [!, ]
+[5 Jan 00:19:17] .a..a..a.ących for current search: 2
+[5 Jan 00:19:17] [6] Guessing: nadmarzających
+[5 Jan 00:19:18] Server: [!, ]
+[5 Jan 00:19:18] [7] Guessing: zabraniających
+[5 Jan 00:19:20] Server: [=, 13, ?, ]
+[5 Jan 00:19:20] Guessed!
+[5 Jan 00:19:20] Total game time: 12.110113382339478
+[5 Jan 00:19:20] Closing connection with server
+[5 Jan 00:19:21] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:19:39] Server: 21122112
+[5 Jan 00:19:39] [0] Guessing: y
+[5 Jan 00:19:41] Server: [=, ]
+[5 Jan 00:19:41] ...y.... for current search: 9
+[5 Jan 00:19:41] [1] Guessing: p
+[5 Jan 00:19:42] Server: [=, ]
+[5 Jan 00:19:42] p..yp... for current search: 3
+[5 Jan 00:19:42] [2] Guessing: posypiaj
+[5 Jan 00:19:44] Server: [=, ]
+[5 Jan 00:19:44] Guessed!
+[5 Jan 00:19:44] Total game time: 4.848915100097656
+[5 Jan 00:19:44] Closing connection with server
+[5 Jan 00:19:45] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:20:10] Server: 11113111111111
+[5 Jan 00:20:10] [0] Guessing: i
+[5 Jan 00:20:10] Server: [=, ]
+[5 Jan 00:20:10] ..i..........i for current search: 1
+[5 Jan 00:20:10] [1] Guessing: zainteresowani
+[5 Jan 00:20:12] Server: [=, ]
+[5 Jan 00:20:12] Guessed!
+[5 Jan 00:20:12] Total game time: 2.187920093536377
+[5 Jan 00:20:12] Closing connection with server
+[5 Jan 00:20:13] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:20:40] Server: 131112111311131
+[5 Jan 00:20:40] [0] Guessing: o
+[5 Jan 00:20:41] Server: [=, ]
+[5 Jan 00:20:41] ....o.....o.... for current search: 4
+[5 Jan 00:20:41] [1] Guessing: a
+[5 Jan 00:20:42] Server: [=, ]
+[5 Jan 00:20:42] ..a.o..a..o.... for current search: 3
+[5 Jan 00:20:42] [2] Guessing: staropiastowską
+[5 Jan 00:20:44] Server: [=, ]
+[5 Jan 00:20:44] Guessed!
+[5 Jan 00:20:44] Total game time: 3.4943110942840576
+[5 Jan 00:20:44] Closing connection with server
+[5 Jan 00:20:45] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 00:21:11] Server: 21221311211
+[5 Jan 00:21:11] [0] Guessing: popychanymi
+[5 Jan 00:21:12] Server: [=, ]
+[5 Jan 00:21:12] Guessed!
+[5 Jan 00:21:12] Total game time: 1.3357973098754883
+[5 Jan 00:21:12] Closing connection with server
+[5 Jan 00:21:13] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 01:11:36] Closing connection by KeyboardInterrupt
+[5 Jan 01:11:39] Set AUTH=True ==> Picking alphabet no. 1
+[5 Jan 01:11:42] Closing connection by KeyboardInterrupt

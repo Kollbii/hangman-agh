@@ -23,7 +23,6 @@ def get_response():
 
 '''Writing msg to log_[day]_[month].txt in `logs` dir'''
 def write_to_log(info):
-    #TODO: Make log file for each day/couple of hours or even sessions of games.
     log_msg = f'{current_time()} {info}'
     print(log_msg)
     system("echo '" + log_msg + "' >> ../logs/log_"+str(strftime('%-d_%b'))+".txt")
@@ -89,7 +88,7 @@ def auth():
     else:
         s.send(f"{LOGIN}\n{PASSW}\n".encode())
     
-    sleep(0.8)
+    sleep(0.5)
     msg = s.recv(64).decode().replace('\n', '').replace('\r', '').replace('\0', '').replace('\x00','')
     if msg[0] == '+':
         AUTH=True
@@ -194,14 +193,14 @@ def game(word_numbers):
                 break
 
             break
-
-        if i > 2:
+    
+        if i > 2: # i == 2 --> 4.72 / 98.48
             letters.pop()
-            letter=letters.pop()
+            letter = letters.pop()
             guessed = guess_letter(letter, i)
         else:
             guessed = guess_letter(letter, i)
-
+        
         if "=" in guessed:
 
             '''Hotfix for Zuza server'''
@@ -242,7 +241,7 @@ if __name__ == "__main__":
             '+#+    +#+ +#+     +#+ +#+  +#+#+# +#+   +#+# +#+    +#+ \n'
             '#+#    #+# #+#     #+# #+#   #+#+# #+#    #+# #+#    #+# \n'
             '###    ### ###     ### ###    ####  ########  ###    ### \n\033[00m')
-    print(  '0 → Loc.Ju\n'
+    print(  '0 → Debugi\n'
             '1 → Dyrczu\n'
             '2 → Jurczy\n'
             '3 → Konope\n'
@@ -250,7 +249,7 @@ if __name__ == "__main__":
             '5 → Gjorgi\n')
     SERVER=int(input('Pick Server:'))
     if SERVER == 0:
-        # Local Jurcz
+        # Local Debug
         HOST='0.0.0.0'
         PORT=7777
         LOGIN='test01\n'
@@ -260,31 +259,31 @@ if __name__ == "__main__":
         HOST='136.243.156.120'
         PORT=50804
         LOGIN='405865\n'
-        PASSW='ENTrKynPYJ\n'
+        PASSW='[REDACTED]\n'
     if SERVER == 2:
         # Jurczyk https://ranking.but-it-actually.work/
         HOST='209.182.238.21'
         PORT=4444
         LOGIN='405865\n'
-        PASSW='I9$*z(D7BqU0Hvqd\n'
+        PASSW='[REDACTED]\n'
     if SERVER == 3:
         # Konopek http://balalaika.ct8.pl/
         HOST='136.243.156.120'
         PORT=12186
         LOGIN='405865\n'
-        PASSW='hmmm\n'
+        PASSW='[REDACTED]n'
     if SERVER == 4:
         # Nędza http://146.59.45.35
         HOST='146.59.45.35'
         PORT=65432
         LOGIN='405865'
-        PASSW='hmmm'
+        PASSW='[REDACTED]'
     if SERVER == 5:
         # Gjorgi http://31.172.70.25/
         HOST='31.172.70.25'
         PORT=130
         LOGIN='405865\n'
-        PASSW='koxowazaliczenie@!\n'
+        PASSW='[REDACTED]\n'
 
     s=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
     while True:

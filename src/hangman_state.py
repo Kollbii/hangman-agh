@@ -36,7 +36,7 @@ class HangmanState(object):
 
     '''
     Returns strings witch is passed to `grep` os call. 
-    Ex. return `..a..i.orta`.
+    Ex. return `[^aiort][^aiort]a[^aiort][^aiort]i[^aiort]orta`.
     '''
     def parse_to_grep(self, excluded_letters):
         excluded = list()
